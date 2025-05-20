@@ -109,7 +109,7 @@ public class ASSpinnerView : UIView {
         let animation = CAKeyframeAnimation(keyPath: keyPath)
         animation.keyTimes = times as [NSNumber]?
         animation.values = values
-        animation.calculationMode = kCAAnimationLinear
+        animation.calculationMode = CAAnimationCalculationMode.linear
         animation.duration = duration
         animation.repeatCount = Float.infinity
         layer.add(animation, forKey: animation.keyPath)
